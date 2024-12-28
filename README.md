@@ -1,15 +1,13 @@
-Overview
+OVERVIEW
 The Indian Multilingual Chatbot is a conversational AI application designed to interact with users in multiple languages, including English, Hindi, Marathi, and Gujarati. It utilizes advanced translation models and a state-of-the-art language model to provide accurate and context-aware responses.
 
-Features
+FEATURES
 Multilingual Support: Communicate in various languages.
 Translation Capabilities: Automatically translates user input to English and responses back to the user's language.
 Conversational AI: Powered by the LLaMA model for generating human-like responses.
 Web Interface: User-friendly interface built with Streamlit for easy interaction.
-Project Structure
-Insert Code
-Run
-Copy code
+
+PROJECT STRUCTURE
 multilingual-chatbot/
 │
 ├── backend/
