@@ -29,7 +29,7 @@ for key, model in TRANSLATORS.items():
 
 # Initialize LLaMA model for conversational tasks with system prompts
 try:
-    chat_model_name = "meta-llama/Llama-2-1b"  # Adjusted model for 6GB VRAM
+    chat_model_name = "meta-llama/Llama-3.2-1B"  # Adjusted model for 6GB VRAM
     chat_model = pipeline(
         "text-generation",
         model=AutoModelForCausalLM.from_pretrained(chat_model_name, torch_dtype=torch.float16).to(device),
@@ -39,6 +39,7 @@ try:
     system_prompt = (
         "You are a helpful, knowledgeable, and friendly AI assistant capable of understanding and responding to "
         "questions in a wide variety of languages. Always provide accurate and concise answers."
+        "your name is llama ai."
     )
 except Exception as e:
     print(f"Error loading chatbot model: {e}")

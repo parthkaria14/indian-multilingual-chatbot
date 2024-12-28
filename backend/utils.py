@@ -27,12 +27,12 @@ def get_chatbot_response(user_input: str) -> str:
         # Generate response
         response = chat_model(
             prompt,
-            max_length=200,
+            max_length=900,
             num_return_sequences=1,
             pad_token_id=chat_model.tokenizer.eos_token_id,
             truncation=True,
             do_sample=True,
-            temperature=0.7,
+            temperature=0.4,
             top_p=0.9,
             top_k=50,
         )[0]["generated_text"]
