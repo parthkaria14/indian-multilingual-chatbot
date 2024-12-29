@@ -11,7 +11,7 @@ PROJECT STRUCTURE
 multilingual-chatbot/
 │
 ├── backend/
-│ ├── **init**.py
+│ ├── __init__.py
 │ ├── app.py # FastAPI application
 │ ├── chatbot.py # Chatbot logic and response handling
 │ ├── models.py # Model initialization and pipelines
@@ -19,8 +19,8 @@ multilingual-chatbot/
 │ └── requirements.txt # Backend dependencies
 │
 ├── frontend/
-│ ├── app.py # Streamlit frontend application
-│ └── requirements.txt # Frontend dependencies
+  ├── app.py # Streamlit frontend application
+  └── requirements.txt # Frontend dependencies
 
 
 
@@ -35,13 +35,13 @@ Frontend:
 2.Install the required packages : pip install -r requirements.txt
 
 RUNNING THE APP
-Start the Backend
-Navigate to the backend directory.
-Run the FastAPI application: uvicorn app:app --host 127.0.0.1 --port 8000 --reload
+1.Start the Backend
+2.Navigate to the backend directory.
+3.Run the FastAPI application: uvicorn app:app --reload
 
-Start the Frontend
-Navigate to the frontend directory.
-Run the Streamlit application: streamlit run app.py
+1.Start the Frontend
+2.Navigate to the frontend directory.
+3.Run the Streamlit application: streamlit run app.py
 
 
 USAGE
